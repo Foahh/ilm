@@ -52,6 +52,16 @@ The cover/title page has a title, author, date, and abstract which is a short de
 
 Only the `title` and `author` fields are necessary; `date` and `abstract` are optional.
 
+You can hide the cover page by setting the `cover-page` option:
+
+```typst
+#show: ilm.with(
+  cover-page: (enabled: false),
+  title: [Your Title],
+  author: "Author Name",
+)
+```
+
 By default, the date is shown in the format: `MMMM DD, YYYY`. You can change the date format by specifying a different format string:
 
 ```typst

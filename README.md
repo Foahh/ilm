@@ -66,6 +66,7 @@ This template exports the `ilm` function with the following named arguments:
 | `date` | `none` | [datetime] | The date that will be displayed on the cover page. |
 | `date-format` | `[month repr:long] [day padding:zero], [year repr:full]` | [string] | The format for the date that will be displayed on the cover page. By default, the date will be displayed as `MMMM DD, YYYY`. |
 | `abstract` | `none` | [content] | A brief summary/description of your work. This is shown on the cover page. |
+| `cover-page` | `(enabled: true)` | [dictionary] | Setting `enabled` to `false` will hide the cover page. |
 | `preface` | `none` | [content] | The preface for your work. The preface content is shown on its own separate page after the cover. |
 | `chapter-pagebreak` | `true` | [bool] | Setting this to `false` will prevent chapters from starting on a new page. |
 | `external-link-circle` | `true` | [bool] | Setting this to `false` will disable the maroon circle that is shown next to external links. |
