@@ -30,7 +30,7 @@ show rule. If you, however, want to change an existing project to use this templ
 can add a show rule like this at the top of your file:
 
 ```typ
-#import "@preview/ilm:1.4.1": *
+#import "@preview/ilm:1.4.2": *
 
 #set text(lang: "en")
 
@@ -70,6 +70,7 @@ This template exports the `ilm` function with the following named arguments:
 | `preface` | `none` | [content] | The preface for your work. The preface content is shown on its own separate page after the cover. |
 | `chapter-pagebreak` | `true` | [bool] | Setting this to `false` will prevent chapters from starting on a new page. |
 | `external-link-circle` | `true` | [bool] | Setting this to `false` will disable the maroon circle that is shown next to external links. |
+| `raw-text` | `(use-typst-defaults: false, custom-font: ("Iosevka", "Fira Mono")), custom-size: 9pt)` | [dictionary] | Setting `use-typst-defaults` to `true` will disable 'Ilm's custom formatting for raw text. |
 | `table-of-contents` | `outline()` | [content] | The result of a call to the [outline function][outline] or none. Setting this to `none` will disable the table of contents. |
 | `appendix` | `(enabled: false, title: "Appendix", heading-numbering-format: "A.1.1.", body: none)` | [dictionary] | Setting `enabled` to `true` and defining your content in `body` will display the appendix after the main body of your document and before the bibliography. |
 | `bibliography` | `none` | [content] | The result of a call to the [bibliography function][bibliography] or none. Specifying this will configure numeric, IEEE-style citations. |
